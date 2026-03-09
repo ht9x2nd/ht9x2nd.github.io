@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <script>
-if(document.cookie.indexOf("login=true")==-1){location.href="/";}
+if(!document.cookie.includes("login=true")){
+location.href="/";
+}
 </script>
+<noscript>
+<meta http-equiv="refresh" content="0;url=/" />
+</noscript>
 
 <html lang="en">
 <head>
@@ -44,5 +49,6 @@ if(document.cookie.indexOf("login=true")==-1){location.href="/";}
                 </div>
             </div>
                         <p class="version-text">wss://enytoz7ydmjh.share.zrok.io</p>
+
 
 
