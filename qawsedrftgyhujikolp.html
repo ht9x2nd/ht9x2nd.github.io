@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <script>
+
+function checkLogin() {
+    if(!document.cookie.includes("login=true")){
+        alert("ログイン切れ");
+        location.href="/";
+    }
+}
+    setTimeout(function(){
+    document.cookie = "login=true; max-age=0; path=/";
+}, 5000); // 5000ms = 5秒
+    
+<script>
 if(!document.cookie.includes("login=true")){
 location.href="/";
 }
@@ -49,6 +61,7 @@ location.href="/";
                 </div>
             </div>
                         <p class="version-text">wss://enytoz7ydmjh.share.zrok.io</p>
+
 
 
 
