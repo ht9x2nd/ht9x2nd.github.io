@@ -15,7 +15,9 @@ function check() {
     var password = document.getElementById("pw").value;
 
     if(password === "1234") {
-        document.cookie="login=true; max-age=600; path=/";
+        setTimeout(function(){
+    document.cookie = "login=true; max-age=0; path=/";
+}, 5000); // 5000ms = 5秒
         window.location.href = "./qawsedrftgyhujikolp.html";
     } else {
         alert("error");
