@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Google</title>
 </head>
-
 <body style="text-align:center; font-family:sans-serif;">
 
 <input type="password" id="pw">
@@ -15,9 +14,9 @@ function check() {
     var password = document.getElementById("pw").value;
 
     if(password === "1234") {
-        setTimeout(function(){
-    document.cookie = "login=true; max-age=0; path=/";
-}, 5000); // 5000ms = 5秒
+        
+        document.cookie="login=true; max-age=5; path=/"; 
+        
         window.location.href = "./qawsedrftgyhujikolp.html";
     } else {
         alert("error");
